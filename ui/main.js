@@ -2,7 +2,7 @@
 var button=document.getElementById('counter');
 
 button.onclick= function(){
-    //make a request to the counter end point
+    //create a request object
     var request =new XMLHttpRequest()    
     //capture the response and store it in a variable
     request.onreadystatechange=function(){
@@ -17,7 +17,9 @@ button.onclick= function(){
         }
         // not done yet
     };
-    
+    //make the request
+    request.open('GET','http://sohamidha.imad.hasura-app.io/counter',true);
+    request.send(null);
     //render the variable in the correct span
 
 };
