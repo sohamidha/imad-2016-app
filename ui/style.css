@@ -1,8 +1,7 @@
+
 body {
     font-family: sans-serif;
     margin-top: 60px;
-    margin-right: 20px;
-    margin-left:20px;
 }
 
 .center {
@@ -21,3 +20,11 @@ body {
     height: 200px;
 }
 
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #4a4a4a;
+    font-family: sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+}
